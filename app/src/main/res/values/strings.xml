@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Birthday Reminder</string>
+    <string name="new_bday">New B\'day</string>
+    <string name="settings">Settings</string>
+
+    <string-array name="addmenu">
+        <item>Choose From Contacts</item>
+        <item>Create New</item>
+    </string-array>
+
+    <string-array name="names">
+        <item>Bhaalu</item>
+        <item>Rohit</item>
+        <item>Shubham</item>
+    </string-array>
+
+
+</resources>

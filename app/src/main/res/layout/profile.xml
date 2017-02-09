@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/profileToolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:elevation="4dp"
+        app:title="Profile"
+        app:titleTextColor="@android:color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@android:color/holo_green_light"/>
+
+
+        <ImageView android:id="@+id/profile_image"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_profile_pic"
+           />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name :"
+        android:layout_toRightOf="@id/profile_image"
+        android:layout_marginTop="90dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView  android:id="@+id/txtNname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:hint="name"
+        android:textStyle="bold"
+        android:layout_below="@id/txtName"
+        android:layout_toRightOf="@id/profile_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNname"
+        android:text="Phone :"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+
+        />
+    <TextView android:id="@+id/txtPphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPhone"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Phone"
+        android:textStyle="bold"
+        />
+    <TextView android:id="@+id/txtDob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPphone"
+        android:textSize="25dp"
+        android:text="Date Of Birth :"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+
+    <TextView android:id="@+id/txtDdob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDob"
+        android:textSize="25dp"
+        android:hint="dob"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_below="@+id/txtDdob"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"/>
+
+    <Button android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_below="@+id/txtDdob"
+        android:layout_toRightOf="@+id/btnEdit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"/>
+
+
+
+
+
+
+</RelativeLayout>

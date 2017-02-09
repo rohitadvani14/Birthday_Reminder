@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+            <android.support.v7.widget.Toolbar
+            android:id="@+id/addUserToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:elevation="4dp"
+            app:title="Add User"
+            app:titleTextColor="@android:color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:background="@android:color/holo_green_light"/>
+
+
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_profile_pic"
+            android:clickable="true"/>
+        <!--<TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:layout_toRightOf="@id/profile_pic"
+            android:layout_marginTop="90dp"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"/> -->
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="98dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/profile_pic"
+            android:layout_marginLeft="20dp" >
+            <EditText  android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textSize="25dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_pic"
+            android:layout_marginLeft="20dp"
+            android:text="Phone no:"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"/>
+
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/txtPhone"
+            android:inputType="phone"/>
+
+
+        <TextView
+            android:id="@+id/txtDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtPhone"
+            android:layout_marginLeft="20dp"
+            android:text="Date of Birth:"
+            android:textSize="25dp"
+            android:layout_marginTop="25dp"/>
+
+        <Button android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDOB"
+            android:layout_toRightOf="@+id/edtYy"
+            android:layout_marginLeft="100dp"
+            android:background="@mipmap/ic_datepicker"
+            />
+        <!--<EditText
+            android:id="@+id/edtDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDOB"
+            android:layout_marginLeft="20dp"/>
+            -->
+        <TextView android:id="@+id/edtDd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="DD"
+            android:layout_below="@id/txtDOB"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+
+            />
+        <TextView android:id="@+id/edtMm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="M"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtDOB"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/edtDd"
+            />
+        <TextView android:id="@+id/edtYy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="YYYY"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtDOB"
+            android:layout_toRightOf="@id/edtMm"
+            android:layout_marginTop="20dp"
+            />
+
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Date of Birth without year"
+            android:layout_below="@id/edtDd"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_below="@id/cb1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+        <Button android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnSave"
+            android:layout_below="@id/cb1"
+            android:text="Cancel"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+
+</RelativeLayout>
